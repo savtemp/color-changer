@@ -3,7 +3,7 @@ import React from 'react'
 function ColorBox({ color }) {
 
 
-  const handleColor = () => {
+  const handleShowColor = () => {
     if (!color) {
       return (
         <p className='m-0'>Empty Value</p>
@@ -18,7 +18,7 @@ function ColorBox({ color }) {
   return (
     <div className='color-box rounded d-flex align-items-center justify-content-center mb-3' style={{ backgroundColor: color }}>
       {/* {color} */}
-      {handleColor()}
+      {handleShowColor()}
     </div>
   )
 }
